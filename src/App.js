@@ -26,15 +26,15 @@ class App extends Component {
               <div className="bar very-strong" />
             </div>
             <div className="strengh-criteria">
-              <div>
+              <div className="criteria">
                 <div className="round" />
                 <p> Pelo menos 6 caracteres </p>
               </div>
-              <div>
+              <div className="criteria">
                 <div className="round" />
                 <p> Pelo menos 1 letra maíuscula </p>
               </div>
-              <div>
+              <div className="criteria">
                 <div className="round" />
                 <p> pelo menos 1 número </p>
               </div>
