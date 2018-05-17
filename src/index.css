@@ -1,0 +1,52 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.password-container {
+  color: #696d8c;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.input-control {
+  display: block;
+}
+
+input {
+  border: 2px solid #d8dbe6;
+  height: 35px;
+  padding: 0px 6px 0px 6px;
+  margin-bottom: 10px;
+}
+
+.bars {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.bars :nth-child(2) {
+  margin: 0px 5px;
+}
+
+.bar {
+  flex: 1;
+  height: 10px;
+  border-radius: 10px;
+}
+
+.bar.weak {
+  background-color: #f79682;
+}
+
+.bar.strong {
+  background-color: #f7bc1c;
+}
+
+.bar.very-strong {
+  background-color: #1fe6a8;
+}
