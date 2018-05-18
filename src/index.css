@@ -6,6 +6,7 @@ body {
 
 .password-container {
   color: #696d8c;
+  width: 100%;
 }
 
 label {
@@ -18,10 +19,13 @@ label {
 }
 
 input {
-  border: 2px solid #d8dbe6;
-  height: 35px;
-  padding: 0px 6px 0px 6px;
+  border: 2px solid #d6d9e5;
+  height: 40px;
+  padding: 13px;
   margin-bottom: 6px;
+  width: 100%;
+  box-sizing: border-box;
+  color: #696d8c;
 }
 
 .bars {
@@ -72,5 +76,14 @@ input {
   height: 10px;
   border-radius: 50%;
   display: inline-block;
-  background-color: red;
+  background-color: #d6d9e5;
+  margin-right: 6px;
+}
+
+.round.fulfilled {
+  background-color: #1fe6a8;
+}
+
+.round.unfulfilled {
+  background-color: #f79682;
 }
