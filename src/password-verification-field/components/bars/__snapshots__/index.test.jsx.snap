@@ -1,0 +1,65 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Bars component should match snapshot when password is doesnt match any criteria 1`] = `
+<div
+  className="bars"
+>
+  <div
+    className="bar "
+  />
+  <div
+    className="bar "
+  />
+  <div
+    className="bar "
+  />
+</div>
+`;
+
+exports[`Bars component should match snapshot when password is strong 1`] = `
+<div
+  className="bars"
+>
+  <div
+    className="bar strong"
+  />
+  <div
+    className="bar strong"
+  />
+  <div
+    className="bar "
+  />
+</div>
+`;
+
+exports[`Bars component should match snapshot when password is very strong 1`] = `
+<div
+  className="bars"
+>
+  <div
+    className="bar very-strong"
+  />
+  <div
+    className="bar very-strong"
+  />
+  <div
+    className="bar very-strong"
+  />
+</div>
+`;
+
+exports[`Bars component should match snapshot when password is weak 1`] = `
+<div
+  className="bars"
+>
+  <div
+    className="bar weak"
+  />
+  <div
+    className="bar "
+  />
+  <div
+    className="bar "
+  />
+</div>
+`;

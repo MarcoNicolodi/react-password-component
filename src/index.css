@@ -11,7 +11,6 @@ body {
 
 label {
   display: block;
-  margin-bottom: 6px;
 }
 
 .input-control {
@@ -22,10 +21,23 @@ input {
   border: 2px solid #d6d9e5;
   height: 40px;
   padding: 13px;
+  margin-top: 6px;
   margin-bottom: 6px;
   width: 100%;
   box-sizing: border-box;
   color: #696d8c;
+}
+
+input.weak {
+  border-color: #f79682;
+}
+
+input.strong {
+  border-color: #f7bc1c;
+}
+
+input.very-strong {
+  border-color: #1fe6a8;
 }
 
 .bars {
@@ -42,6 +54,7 @@ input {
   flex: 1;
   height: 10px;
   border-radius: 10px;
+  background-color: #d6d9e5;
 }
 
 .bar.weak {

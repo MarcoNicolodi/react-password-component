@@ -1,0 +1,44 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Criterias component should match snapshot 1`] = `
+<div
+  className="strengh-criteria"
+>
+  <div
+    className="criteria"
+  >
+    <div
+      className="round unfulfilled"
+    />
+    <p>
+       
+      Pelo menos 6 caracteres
+       
+    </p>
+  </div>
+  <div
+    className="criteria"
+  >
+    <div
+      className="round fulfilled"
+    />
+    <p>
+       
+      Pelo menos 1 letra
+       
+    </p>
+  </div>
+  <div
+    className="criteria"
+  >
+    <div
+      className="round fulfilled"
+    />
+    <p>
+       
+      Pelo menos 1 número
+       
+    </p>
+  </div>
+</div>
+`;

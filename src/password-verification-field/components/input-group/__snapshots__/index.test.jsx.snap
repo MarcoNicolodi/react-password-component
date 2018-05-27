@@ -1,0 +1,77 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`InputGroup component should match snapshot when password is empty 1`] = `
+<div
+  className="input-control"
+>
+  <label
+    htmlFor="password"
+  >
+    Password
+    <input
+      className={undefined}
+      id="password"
+      onChange={[Function]}
+      placeholder="Digite sua senha"
+      type="password"
+    />
+  </label>
+</div>
+`;
+
+exports[`InputGroup component should match snapshot when password is strong 1`] = `
+<div
+  className="input-control"
+>
+  <label
+    htmlFor="password"
+  >
+    Password
+    <input
+      className="strong"
+      id="password"
+      onChange={[Function]}
+      placeholder="Digite sua senha"
+      type="password"
+    />
+  </label>
+</div>
+`;
+
+exports[`InputGroup component should match snapshot when password is very-strong 1`] = `
+<div
+  className="input-control"
+>
+  <label
+    htmlFor="password"
+  >
+    Password
+    <input
+      className="very-strong"
+      id="password"
+      onChange={[Function]}
+      placeholder="Digite sua senha"
+      type="password"
+    />
+  </label>
+</div>
+`;
+
+exports[`InputGroup component should match snapshot when password is weak 1`] = `
+<div
+  className="input-control"
+>
+  <label
+    htmlFor="password"
+  >
+    Password
+    <input
+      className="weak"
+      id="password"
+      onChange={[Function]}
+      placeholder="Digite sua senha"
+      type="password"
+    />
+  </label>
+</div>
+`;
