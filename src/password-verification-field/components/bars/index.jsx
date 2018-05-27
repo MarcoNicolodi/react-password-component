@@ -1,30 +1,31 @@
 // @flow
 import React from "react";
+import type { Strength } from "../../index";
 
-export default (props: { fulfilled: number }) => {
-  const { fulfilled } = props;
+export default (props: { strength: Strength }) => {
+  const { strength } = props;
 
   let firstBarClass;
   let secondBarClass;
   let thirdBarClass;
 
-  switch (fulfilled) {
-    case 0:
+  switch (strength) {
+    case null:
       firstBarClass = "";
       secondBarClass = "";
       thirdBarClass = "";
       break;
-    case 1:
+    case "weak":
       firstBarClass = "weak";
       secondBarClass = "";
       thirdBarClass = "";
       break;
-    case 2:
+    case "strong":
       firstBarClass = "strong";
       secondBarClass = "strong";
       thirdBarClass = "";
       break;
-    case 3:
+    case "very-strong":
       firstBarClass = "very-strong";
       secondBarClass = "very-strong";
       thirdBarClass = "very-strong";

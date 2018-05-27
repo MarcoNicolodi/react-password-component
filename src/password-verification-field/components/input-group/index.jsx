@@ -1,8 +1,9 @@
 import React from "react";
+import type { Strength } from "../../";
 
 export default (props: {
   onChange: (value: string) => void,
-  strength: string
+  strength: ?Strength
 }) => (
   <div className="input-control">
     <label htmlFor="password">
@@ -12,7 +13,7 @@ export default (props: {
         onChange={event => props.onChange(event.target.value)}
         type="password"
         placeholder="Digite sua senha"
-        className={props.strength || undefined}
+        className={props.strength}
       />
     </label>
   </div>

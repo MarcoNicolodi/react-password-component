@@ -10,7 +10,7 @@ export default (props: {
         <div
           className={`round ${
             // eslint-disable-next-line no-nested-ternary
-            criteria.fulfilled === undefined
+            criteria.fulfilled === null
               ? ""
               : criteria.fulfilled
                 ? "fulfilled"
