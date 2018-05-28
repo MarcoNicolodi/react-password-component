@@ -3,7 +3,6 @@ import React from "react";
 import { Bars, InputGroup, Criterias } from "./components";
 
 const mapFulfilledRatioToStrengthEnum = (ratio: number) => {
-  console.log(ratio);
   if (ratio <= 0.34) {
     return "weak";
   } else if (ratio > 0.34 && ratio < 0.67) {
