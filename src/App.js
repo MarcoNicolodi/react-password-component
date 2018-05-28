@@ -20,10 +20,14 @@ class App extends Component {
     ];
 
     return (
-      <div className="">
-        <header className="App-header">
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
+      <div
+        style={{
+          height: "500px",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center"
+        }}
+      >
         <div
           style={{
             display: "flex",

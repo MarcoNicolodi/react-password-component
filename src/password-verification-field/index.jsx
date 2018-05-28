@@ -3,9 +3,10 @@ import React from "react";
 import { Bars, InputGroup, Criterias } from "./components";
 
 const mapFulfilledRatioToStrengthEnum = (ratio: number) => {
-  if (ratio <= 0.33) {
+  console.log(ratio);
+  if (ratio <= 0.34) {
     return "weak";
-  } else if (ratio > 0.33 && ratio < 0.66) {
+  } else if (ratio > 0.34 && ratio < 0.67) {
     return "strong";
   }
 
@@ -48,11 +49,15 @@ export default class PasswordField extends React.Component<Props, State> {
       if (fulfilled) {
         fulfilledRules += 1;
       }
-      criterias.push({ rule: rule.message, fulfilled: rule.run(value) });
+      criterias.push({
+        rule: rule.message,
+        fulfilled: value === "" ? null : fulfilled
+      });
     });
-    const strength = mapFulfilledRatioToStrengthEnum(
-      fulfilledRules / rules.length
-    );
+    const strength =
+      value === ""
+        ? null
+        : mapFulfilledRatioToStrengthEnum(fulfilledRules / rules.length);
 
     this.setState({ criterias, strength });
   };
