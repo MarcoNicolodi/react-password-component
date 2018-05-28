@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Bars component should match snapshot when password is doesnt match any criteria 1`] = `
+exports[`Bars component should match snapshot when password field is empty 1`] = `
 <div
   className="bars"
 >

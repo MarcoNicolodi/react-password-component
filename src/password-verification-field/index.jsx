@@ -1,6 +1,7 @@
 // @flow
 import React from "react";
 import { Bars, InputGroup, Criterias } from "./components";
+import mapFulfilledRatioToStrengthEnum from "./lib/map-fulfilled-ratio-to-strength-enum";
 
 export type Strength = "weak" | "strong" | "very-strong";
 
@@ -18,16 +19,6 @@ type Props = {
 type State = {
   criterias: Array<Criteria>,
   strength: ?Strength
-};
-
-const mapFulfilledRatioToStrengthEnum = (ratio: number): Strength => {
-  if (ratio <= 0.34) {
-    return "weak";
-  } else if (ratio > 0.34 && ratio < 0.67) {
-    return "strong";
-  }
-
-  return "very-strong";
 };
 
 export default class PasswordField extends React.Component<Props, State> {
